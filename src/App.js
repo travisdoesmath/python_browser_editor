@@ -24,7 +24,7 @@ export default function App() {
   const [code, setCode] = useState("");
 
   function handleEditorChange(value, event) {
-    setCode(value);
+    setCode(`__name__ = '__main__'\n${value}`);
     //console.log("here is the current model value:", value);
     //console.log(event);
   }
@@ -33,7 +33,7 @@ export default function App() {
     console.log('handleRunCode');
     window.pyodide.loadPackage([]).then(() => {
       let output = window.pyodide.runPython(code);
-      console.log('pyodide output', output);
+      console.log('pyodide output:', output);
       setOutput(output);
     })
   }
