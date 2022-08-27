@@ -1,0 +1,10 @@
+{
+  "files": {
+    "main.js": "/python_browser_editor/static/js/main.920bf13d.js",
+    "index.html": "/python_browser_editor/index.html",
+    "main.920bf13d.js.map": "/python_browser_editor/static/js/main.920bf13d.js.map"
+  },
+  "entrypoints": [
+    "static/js/main.920bf13d.js"
+  ]
+}
